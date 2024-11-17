@@ -1,0 +1,111 @@
+body {
+    background-color: #ffe6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #d9534f;
+    margin: 0;
+}
+
+.contenedor {
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+input {
+    margin: 10px;
+    padding: 8px;
+    font-size: 1em;
+    border: 2px solid #d9534f;
+    border-radius: 5px;
+}
+
+.resultados {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.resultado-jugador {
+    font-size: 1.2em;
+}
+
+.boton-jugar {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin: 10px;
+    color: #fff;
+    background-color: #d9534f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton-jugar:hover {
+    background-color: #b9453b;
+}
+
+.resultado-texto {
+    font-size: 1.5em;
+    color: #d9534f;
+    margin-top: 20px;
+}
+
+.animacion-corazones {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.corazon {
+    position: absolute;
+    color: #ff6b6b;
+    animation: flotar 5s infinite;
+}
+
+@keyframes flotar {
+    0% {
+        transform: translateY(100vh) scale(0.5);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-20vh) scale(1.5);
+        opacity: 0;
+    }
+}
+.animacion-corazones {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Ocupar todo el ancho de la pantalla */
+    height: 100vh;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.corazon {
+    position: absolute;
+    color: #ff6b6b;
+    animation: flotar 5s infinite;
+}
+
+@keyframes flotar {
+    0% {
+        transform: translateY(100vh) scale(0.5);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-20vh) scale(1.5);
+        opacity: 0;
+    }
+}

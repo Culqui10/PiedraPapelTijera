@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, papel o tijera</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Piedra, Papel o Tijera</h1>
+
+        <!-- Ingreso de nombres -->
+        <input type="text" id="nombre1" placeholder="Ingrese nombre">
+        <input type="text" id="nombre2" placeholder="Ingrese nombre">
+
+        <!-- Resultados de cada jugador -->
+        <div class="resultados">
+            <div class="resultado-jugador">
+                <h3 id="nombreJugador1">Jugador 1</h3>
+                <p id="eleccionJugador1">Esperando...</p>
+            </div>
+            <div class="resultado-jugador">
+                <h3 id="nombreJugador2">Jugador 2</h3>
+                <p id="eleccionJugador2">Esperando...</p>
+            </div>
+        </div>
+
+        <!-- Botón de jugar -->
+        <button onclick="jugar()" class="boton-jugar">¡Jugar!</button>
+
+        <!-- Resultado del juego -->
+        <div id="resultado" class="resultado-texto"></div>
+
+        <!-- Animación de corazones flotantes -->
+        <div class="animacion-corazones" id="animacionCorazones"></div>
+    </div>
+
+    <script src="juego.js"></script>
+</body>
+</html>
